@@ -1,0 +1,57 @@
+/* reset all */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-size: 3em;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 900;
+    position: relative;
+    top: 1vh;
+    animation: jumpingArrow 1.5s ease infinite;
+}
+
+#div1 {
+    background: lightcoral;
+}
+#div2 {
+    background: lightyellow;
+}
+#div3 {
+    background: lightgreen;
+}
+
+@keyframes jumpingArrow {
+    0% {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(2vw);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+}
